@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#08070c" />
+
+  <title>Yağmur'a</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- MÜZİK -->
+  <audio id="bgMusic" preload="auto" loop>
+    <source src="assets/music/Take%20Me%20There.mp3" type="audio/mpeg">
+  </audio>
+
+  <button
+    id="musicToggle"
+    class="music-toggle"
+    aria-label="Müziği aç veya kapat"
+    title="Müzik"
+  >
+    ♫
+  </button>
+
+
+  <!-- ARKA PLAN -->
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="stars"></div>
+
+
+  <!-- GİRİŞ -->
+
+  <div id="intro">
+
+    <div class="intro-glow"></div>
+
+    <div class="intro-box">
+
+      <div class="eyebrow intro-eyebrow">
+        YAĞMUR'A
+      </div>
+
+      <h1 class="intro-title serif">
+        Bu sefer birkaç
+        <br>
+        mesaj yetmedi.
+      </h1>
+
+      <p class="intro-copy">
+        Söylemek istediğim bazı şeyleri
+        aceleyle yazıp geçmek istemedim.
+        <br>
+        O yüzden sana küçük bir şey hazırladım.
+      </p>
+
+      <button class="btn" id="enter">
+        <span>Devam et</span>
+        <span class="btn-arrow">↓</span>
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- SİNEMATİK GEÇİŞ -->
+
+  <div id="cinematic">
+
+    <div class="cinematic-text">
+      <span id="cinematicLine"></span>
+    </div>
+
+  </div>
+
+
+  <main>
+
+    <!-- HERO -->
+
+    <header class="hero">
+
+      <div class="wrap hero-inner">
+
+        <div class="eyebrow reveal">
+          21 TEMMUZ 2026'DAN BERİ
+        </div>
+
+        <h1 class="serif reveal">
+
+          Aramızda
+          <br>
+          mesafe var.
+
+          <em>
+            Ama sen
+            <br>
+            uzakta değilsin.
+          </em>
+
+        </h1>
+
+        <p class="reveal">
+
+          Aynı ülkede bile değiliz.
+
+          İstediğimiz zaman yan yana gelemiyoruz.
+
+          Ama buna rağmen hayatımın içinde
+          kendine hiç beklemediğim kadar gerçek
+          bir yer açtın.
+
+        </p>
+
+      </div>
+
+
+      <div class="scroll-note">
+        <span>Aşağı kaydır</span>
+        <span class="scroll-line"></span>
+      </div>
+
+    </header>
+
+
+    <!-- MESAFE -->
+
+    <section class="distance-section">
+
+      <div class="wrap">
+
+        <div class="section-head reveal">
+
+          <div class="eyebrow">
+            MESAFE
+          </div>
+
+          <h2 class="serif">
+            İki ülke.
+            <br>
+            Aynı hikâye.
+          </h2>
+
+          <p>
+
+            Ben Bursa'dayım.
+
+            Sen Ohio'dasın.
+
+            Aramızda binlerce kilometre,
+            saat farkı ve koca bir okyanus var.
+
+            Ama bütün bunlar seni tanımış olmamın
+            değerini değiştirmiyor.
+
+          </p>
+
+        </div>
+
+
+        <div class="distance-card reveal">
+
+          <div class="distance-top">
+
+            <div class="city-block">
+
+              <span class="flag">🇹🇷</span>
+
+              <strong>Bursa</strong>
+
+              <small>Türkiye</small>
+
+            </div>
+
+
+            <div class="distance-center">
+
+              <span class="distance-label">
+                8.000+ KM
+              </span>
+
+              <div class="route">
+
+                <span class="route-line"></span>
+
+                <span class="travel-light"></span>
+
+              </div>
+
+              <span class="distance-sub">
+                ve bir okyanus
+              </span>
+
+            </div>
+
+
+            <div class="city-block right">
+
+              <span class="flag">🇺🇸</span>
+
+              <strong>Ohio</strong>
+
+              <small>Amerika</small>
+
+            </div>
+
+          </div>
+
+
+          <div class="distance-message">
+
+            <div class="quote-mark">
+              “
+            </div>
+
+            <p id="distancePhrase" class="serif">
+              Kilometrelerce uzakta, ama günümün içinde.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SAYAÇ -->
+
+    <section>
+
+      <div class="wrap">
+
+        <div class="section-head reveal">
+
+          <div class="eyebrow">
+            TANIŞTIĞIMIZDAN BERİ
+          </div>
+
+          <h2 class="serif">
+            Zaman hızlı geçti.
+          </h2>
+
+          <p>
+
+            Belki çok uzun bir zaman değil.
+
+            Ama benim için sıradan geçen
+            günler de değildi.
+
+          </p>
+
+        </div>
+
+
+        <div class="counter-grid reveal">
+
+          <div class="counter">
+            <strong id="days">—</strong>
+            <span>Gün</span>
+          </div>
+
+          <div class="counter">
+            <strong id="hours">—</strong>
+            <span>Saat</span>
+          </div>
+
+          <div class="counter">
+            <strong id="minutes">—</strong>
+            <span>Dakika</span>
+          </div>
+
+          <div class="counter">
+            <strong id="seconds">—</strong>
+            <span>Saniye</span>
+          </div>
+
+        </div>
+
+
+        <p class="counter-note reveal">
+
+          21 Temmuz'da tanıştık.
+
+          Bir ayı biraz geçtik.
+
+          Ve açıkçası bu kadar kısa zamanda
+          hayatımda bu kadar yer edinmeni beklemiyordum.
+
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- SON ZAMANLAR -->
+
+    <section class="statement">
+
+      <div class="wrap statement-inner reveal">
+
+        <div class="eyebrow statement-eyebrow">
+          AMA HER ŞEY MÜKEMMEL DEĞİLDİ
+        </div>
+
+        <p class="big">
+
+          Güzel şeyler yaşadık.
+
+          <br>
+
+          <span class="dim">
+            Son zamanlarda ise
+            birbirimizi biraz fazla yorduk.
+          </span>
+
+        </p>
+
+
+        <p class="small">
+
+          Bunu görmezden gelip sanki hiçbir şey
+          olmamış gibi romantik şeyler yazmak istemiyorum.
+
+          Çünkü bazı şeyleri kabul etmeden edilen
+          özrün pek bir anlamı yok.
+
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- ÖZÜR -->
+
+    <section class="apology-section">
+
+      <div class="wrap apology">
+
+        <div class="apology-title reveal">
+
+          <div class="eyebrow">
+            SÖYLEMEM GEREKEN ŞEY
+          </div>
+
+          <h2 class="serif">
+            Senden
+            <br>
+            özür
+            <br>
+            dilerim.
+          </h2>
+
+        </div>
+
+
+        <div class="letter reveal">
+
+          <p>
+
+            Son zamanlarda gereğinden fazla tartıştık.
+
+            Bazen sinirlenince saçma davrandım,
+            bazen söylemek istediğim şeyi
+            düzgün anlatamadım.
+
+          </p>
+
+
+          <p>
+
+            Seni kırdığım zamanlar oldu.
+
+            Bazen seni anlamaya çalışmak yerine
+            kendi söylediğimi anlatmaya uğraştım.
+
+            Bunun farkındayım.
+
+          </p>
+
+
+          <p>
+
+            Her tartışmada haklı olmak zorunda değilim.
+
+            <strong>
+              Hele haklı çıkmaya çalışırken
+              seni kırıyorsam hiç değilim.
+            </strong>
+
+          </p>
+
+
+          <p>
+
+            Sana şimdi
+            “bir daha hiç kavga etmeyeceğiz”
+            gibi gerçekçi olmayan bir şey söylemeyeceğim.
+
+            Muhtemelen yine birbirimize sinirleneceğiz,
+            yine saçmaladığımız anlar olacak.
+
+          </p>
+
+
+          <p>
+
+            Ama aynı şeyler yüzünden
+            birbirimizi sürekli yormak istemiyorum.
+
+            Seni daha iyi anlamaya,
+            sinirlendiğimde biraz daha düşünmeye
+            ve bazı şeyleri büyütmemeye çalışacağım.
+
+          </p>
+
+
+          <p class="letter-highlight">
+
+            Çünkü birkaç kötü gün yüzünden
+            seni kaybetmek isteyeceğim son şey.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ODUN -->
+
+    <section>
+
+      <div class="wrap">
+
+        <div class="wood-card reveal">
+
+          <div class="wood-icon">
+            ♡
+          </div>
+
+          <div class="setup">
+
+            Normalde burada
+            “sende sevdiğim 10 şey”
+            falan yazmam gerekiyordu sanırım.
+
+          </div>
+
+
+          <div class="punch">
+
+            Ama sen beni tanıyorsun.
+
+            <br>
+
+            <span class="wood">
+              Biraz odunum.
+            </span>
+
+            <br><br>
+
+            O yüzden seni neden sevdiğimi
+            madde madde anlatamam.
+
+            <br><br>
+
+            <span class="accent">
+
+              Sadece seni
+              her şeyinle,
+              her halinle seviyorum.
+
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- 1 AY -->
+
+    <section>
+
+      <div class="wrap">
+
+        <div class="section-head reveal">
+
+          <div class="eyebrow">
+            1 AY
+          </div>
+
+          <h2 class="serif">
+            Birkaç gün geç kaldım.
+          </h2>
+
+          <p>
+
+            Ama unutmuş olduğumdan değil.
+
+            Sana sadece
+            “1 ayımız kutlu olsun”
+            yazıp geçmek istemedim.
+
+          </p>
+
+        </div>
+
+
+        <div class="late">
+
+          <div class="late-card reveal">
+
+            <span class="card-number">
+              01
+            </span>
+
+            <b>Bir ay.</b>
+
+            <p>
+
+              Seni tanıdığım,
+              sana alıştığım,
+              güldüğüm,
+              sinirlendiğim,
+              seni özlediğim
+              ve bazen saçma sapan kavga ettiğim
+              bir ay.
+
+            </p>
+
+          </div>
+
+
+          <div class="late-card reveal">
+
+            <span class="card-number">
+              ∞
+            </span>
+
+            <b>Ve sonrası.</b>
+
+            <p>
+
+              Benim için önemli olan
+              sadece geride bıraktığımız bir ay değil.
+
+              Bundan sonra birlikte
+              daha güzel günler yaşayabilmek.
+
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FINAL -->
+
+    <section class="final">
+
+      <div class="wrap final-inner reveal">
+
+        <div class="tiny">
+          SON BİR ŞEY
+        </div>
+
+
+        <h2 class="serif">
+
+          İyi ki
+
+          <br>
+
+          <span>
+            tanışmışız, Yağmur.
+          </span>
+
+        </h2>
+
+
+        <p>
+
+          Geçirdiğimiz birkaç kötü günün
+          güzel olan her şeyi gölgelemesini istemiyorum.
+
+          <br><br>
+
+          Seni kırdığım şeyler için
+          gerçekten özür dilerim.
+
+          <br><br>
+
+          Ve bunu söylemekte bazen
+          ne kadar beceriksiz olsam da:
+
+          <strong>
+            seni seviyorum.
+          </strong>
+
+        </p>
+
+
+        <button
+          class="heart-button"
+          id="surpriseButton"
+          aria-label="Son sürprizi aç"
+        >
+          <span>♡</span>
+        </button>
+
+
+        <span class="heart-hint">
+          dokun
+        </span>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- GİZLİ SÜRPRİZ -->
+
+  <div
+    id="surprise"
+    class="surprise"
+    aria-hidden="true"
+  >
+
+    <button
+      class="surprise-close"
+      id="surpriseClose"
+      aria-label="Kapat"
+    >
+      ×
+    </button>
+
+
+    <div class="surprise-content">
+
+      <div class="eyebrow">
+        BU ARADA...
+      </div>
+
+
+      <p class="surprise-small">
+
+        Buraya kadar geldiysen sana en çok
+        söylemem gereken şeyi sona sakladım.
+
+      </p>
+
+
+      <h3 class="serif">
+
+        Belki sana bunu
+
+        <br>
+
+        <span>
+          yeterince hissettiremiyorum.
+        </span>
+
+      </h3>
+
+
+      <p class="surprise-bottom">
+
+        Bazen seni umursamıyormuşum gibi
+        hissettirdiğimi biliyorum.
+
+        Bazen sevgimi göstermekte
+        gerçekten beceriksizim.
+
+        <br><br>
+
+        Ama bunu bilmeni istiyorum.
+
+        <br><br>
+
+        Seni umursuyorum.
+        <br>
+        Söylediklerini umursuyorum.
+        <br>
+        Kırıldığında umursuyorum.
+        <br>
+        Aramız kötü olduğunda umursuyorum.
+
+        <br><br>
+
+        Belki her zaman bunu doğru şekilde
+        gösteremiyorum.
+
+        Belki bazen davranışlarım
+        söylediğim şeylerin tam tersini
+        hissettiriyor.
+
+        <br><br>
+
+        Ama bu seni önemsemediğim anlamına gelmiyor.
+
+        <br><br>
+
+        <strong>
+          Seni gerçekten seviyorum.
+        </strong>
+
+        <br><br>
+
+        Ve sanırım artık bunu sadece
+        söylemenin yeterli olmadığını da anlıyorum.
+
+        <br><br>
+
+        Sana sevildiğini,
+        önemsendiğini ve hayatımda
+        gerçekten bir yerin olduğunu
+        daha fazla hissettirmek istiyorum.
+
+        <br><br>
+
+        Çünkü senin benim sevgimi
+        tahmin etmek zorunda kalmanı istemiyorum.
+
+        <br><br>
+
+        Bilmeni değil sadece...
+
+        <br>
+
+        <strong>
+          hissetmeni istiyorum. ♡
+        </strong>
+
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
